@@ -7,10 +7,13 @@ timestamps {
         ])
       ])
       checkout scm
-      stage('Running Selenium') {
+      stage('shell') {
         sh '''
           echo "$XYZ"
           '''
+      }
+      stage('eval') {
+        evaluate(readFile("./eval.groovy"))
       }
     }
   }
