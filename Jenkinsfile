@@ -9,7 +9,7 @@ timestamps {
       checkout scm
       stage('shell') {
         sh '''
-          echo "$JAVA_HOME"
+          echo "JAVA_HOME $JAVA_HOME"
           '''
       }
       stage('eval') {
