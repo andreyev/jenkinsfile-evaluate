@@ -3,13 +3,13 @@ timestamps {
     node("BuildOnAws"){
       properties([
         parameters([
-          string(defaultValue: '', description: 'XYZ', name: 'XYZ'),
+          string(defaultValue: '', description: 'XYZ', name: 'JDK'),
         ])
       ])
       checkout scm
       stage('shell') {
         sh '''
-          echo "$XYZ"
+          echo "$JDK"
           '''
       }
       stage('eval') {

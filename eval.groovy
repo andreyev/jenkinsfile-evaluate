@@ -1,3 +1,3 @@
 sh '''
-  echo "$XYZ"
+  echo "$JDK"
 '''
