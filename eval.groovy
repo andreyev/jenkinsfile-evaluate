@@ -1,3 +1,3 @@
 sh '''
-  echo "$JDK"
+  echo "$JAVA_HOME"
 '''
